@@ -33,6 +33,8 @@ body button:hover {
 }
 
 html {
+    margin-top: 0;
+    padding-top: 0;
     scroll-behavior: smooth;
 }
 
@@ -133,7 +135,7 @@ a.move-top {
 }
 
 header {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     z-index: 9;
 }
@@ -165,7 +167,7 @@ nav {
 
 .logo {
     /* width: 300px; */
-    height: 100px;
+    height: 80px;
 }
 
 
@@ -176,6 +178,17 @@ nav:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.nav_contact a {
+    font-family: 'Nunito Sans', sans-serif;
+    float: right;
+    margin-left: 10px;
+}
+
+.nav_contact a span {
+    color: #00adee;
+    margin: 0 10px 0 10px;
 }
 
 /* Removing padding, margin and "list-style" from the "ul",
@@ -202,7 +215,7 @@ nav ul li {
 
 /* Styling the links */
 nav a {
-    color: #fff;
+    color: #000;
     text-transform: capitalize;
     font-weight: 400;
     font-size: 15px;
@@ -219,7 +232,7 @@ nav a {
 
 
 nav ul li ul li:hover {
-    color: #000;
+    color: #fff;
     background: #f8f9fa;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -232,8 +245,8 @@ nav ul li ul li:hover {
 
 .menu li a.active,
 .menu li a:hover {
-    color: #333;
-    background: #fff;
+    color: #00adee;
+    background: #FFF;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -610,17 +623,17 @@ a.reqe-button {
 }
 
 .csslider>ul>li:first-child {
-    background: url(../images/fun-1850709_1920.jpg) no-repeat center;
+    background: url(../images/lewi_bcg_1_1440.jpg) no-repeat center;
     background-size: cover;
 }
 
 .csslider>ul>li:nth-child(2) {
-    background: url(../images/lewi_bcg_1_1440.jpg) no-repeat top;
+    background: url(../images/fun-1850709_1920.jpg) no-repeat top;
     background-size: cover;
 }
 
 .csslider>ul>li:last-child {
-    background: url(../images/1.jpg) no-repeat center;
+    background: url(../images/15694.jpg) no-repeat center;
     background-size: cover;
 }
 
