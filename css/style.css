@@ -184,6 +184,7 @@ nav:after {
     font-family: 'Nunito Sans', sans-serif;
     float: right;
     margin-left: 10px;
+    color: #00adee;
 }
 
 .nav_contact a span {
@@ -633,7 +634,7 @@ a.reqe-button {
 }
 
 .csslider>ul>li:last-child {
-    background: url(../images/15694.jpg) no-repeat center;
+    background: url(../images/massage-1929064_1920.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -812,7 +813,7 @@ footer {
 
 /* about */
 .about {
-    background: url(../images/bg2.jpg) no-repeat center;
+    /* background: url(../images/bg2.jpg) no-repeat center; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1099,7 +1100,7 @@ a.btn.button-style-2:hover {
 
 /* inner pages */
 .banner_w3lspvt-2 {
-    background: url(../images/1.jpg) no-repeat center;
+    background: url(../images/lewi_bcg_1_1440.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
