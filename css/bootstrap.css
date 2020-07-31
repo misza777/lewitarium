@@ -1968,6 +1968,11 @@ pre code {
   border-bottom-width: 2px;
 }
 
+.table-borderless td,
+.table-borderless th {
+  border: 0;
+}
+
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05);
 }
