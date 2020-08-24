@@ -98,7 +98,7 @@ a:hover {
 
 /* colors code */
 .text-my-primary {
-    color: #00adee;
+    color: #00adee !important;
 }
 
 .text-bl {
@@ -868,7 +868,7 @@ p.title-sub {
 }
 
 a.button-w3ls {
-    color: #6c5ce7;
+    color: #00adee;
     font-size: 16px;
     display: inline-block;
     letter-spacing: 1px;
@@ -880,17 +880,17 @@ a.button-w3ls {
 }
 
 a.button-w3ls:hover {
-    color: #6c5ce7;
+    color: #00adee;
     letter-spacing: 3px;
 }
 
 .my-btn {
-   background-color: #00adee; 
-   color: #fff;
-   border-radius: 25px;
-   padding: 8px 18px;
-   font-size: 13px;
-   letter-spacing: 1px;
+    background-color: #00adee;
+    color: #fff;
+    border-radius: 25px;
+    padding: 8px 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 /* //about */
@@ -1128,6 +1128,15 @@ a.btn.button-style-2:hover {
     min-height: 300px;
 }
 
+.banner_w3lspvt-3 {
+    background: url(../images/under_const_1920.jpg) no-repeat 50% 60%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 300px;
+}
 /* page details */
 .breadcrumb li a {
     color: #fff;
