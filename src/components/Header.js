@@ -1,40 +1,54 @@
 import React from "react"
 import { Link } from "gatsby"
+import {
+  FaHome,
+  FaFacebookSquare,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
   return (
     <header>
-      <div className="container-fluid">
+      <div className="container">
+        {/* <div className="container-fluid"> */}
         <div
           className="header d-md-flex justify-content-between align-items-center py-2 
 					px-lg-3 px-2 mt-s-0 mt-xs-0 px-xl-4"
         >
           {/* <!-- logo --> */}
-          <div id="logo">
-            {/* <h1><a className="" href="index.html"> */}
-            {/* <img className='logo' src="../images/lewitarium_logo.png" */}
-            {/* alt="logo lewitarium"></a></h1> */}
-          </div>
+          <Link to="/" id="logo">
+            <StaticImage
+              className="logo"
+              src="../images/lewitarium_logo.png"
+              alt="logo lewitarium"
+              placeholder="blurred"
+              layout="fixed"
+              background="transparent"
+              width={210}
+            />
+          </Link>
           {/* //logo  */}
 
           {/* <!-- nav --> */}
           <div className="nav_w3ls">
             {/* <!-- //contact --> */}
             <div className="nav_contact mx-xl-2 mx-lg-2 pr-lg-1 mb-xl-2 mb-lg-2">
-              <Link to="/contact">
-                <span className="fa fa-envelope"></span>panorama@lewitarium.pl
+              <Link to="#kontakt">
+                <FaEnvelope /> panorama@lewitarium.pl
               </Link>
 
-              <a href="#kontakt">
-                <span className="fa fa-phone"></span>608 608 467
-              </a>
+              <Link to="#kontakt">
+                <FaPhoneAlt /> 608 608 467
+              </Link>
 
               <a
                 href="https://www.facebook.com/FloatingGanbanyoku"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="fa fa-facebook-official"></span>
+                <FaFacebookSquare />
               </a>
             </div>
             {/* <!-- //contact --> */}
@@ -47,32 +61,32 @@ const Header = () => {
               <ul className="menu my-2">
                 {/* <!-- home icon --> */}
                 <li>
-                  <a href="index.html" className=" py-1 active homeicon bigger">
-                    <i className="fa fa-home" aria-hidden="true"></i>
-                  </a>
+                  <Link to="/" className="py-1 active homeicon bigger">
+                    <FaHome />
+                  </Link>
                 </li>
 
                 {/* <!-- O NAS --> */}
                 <li className="mx-lg-4 mx-md-3 my-md-0 my-2">
-                  <a className="underline" href="#about">
+                  <Link className="underline" to="#about">
                     O Nas
-                  </a>
+                  </Link>
                 </li>
                 {/* <!-- cennik --> */}
                 <li className="mx-lg-4 mx-md-3 my-md-0 my-2">
-                  <a className="underline" href="pricing_main.html">
+                  <Link className="underline" to="pricing/main">
                     Cennik
-                  </a>
+                  </Link>
                 </li>
 
                 {/* <!-- kup voucher --> */}
                 <li>
-                  <a
+                  <Link
                     className="text-my-primary font-weight-bold underline bigger"
-                    href="voucher.html"
+                    to="voucher"
                   >
                     KUP VOUCHER
-                  </a>
+                  </Link>
                 </li>
 
                 {/* <!-- First Tier Drop Down USLUGI --> */}
@@ -84,66 +98,64 @@ const Header = () => {
                       aria-hidden="true"
                     ></span>
                   </label>
-                  <a href="#">
+                  <Link to="#">
                     Oferta{" "}
                     <span
                       className="fa fa-angle-down"
                       aria-hidden="true"
                     ></span>
-                  </a>
+                  </Link>
                   <input type="checkbox" id="drop-2" />
                   <ul>
-                    {/* <!-- <li><a href="#services" className="drop-text">Floating</a></li> --> */}
+                    {/* <!-- <li><Link to="#services" className="drop-text">Floating</Link></li> --> */}
                     <li>
-                      <a href="floating.html" className="drop-text">
+                      <Link to="floating.html" className="drop-text">
                         Floating
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="drop-text">
+                      <Link to="#" className="drop-text">
                         Sauna Ganbanyoku
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="drop-text">
+                      <Link to="#" className="drop-text">
                         Masaże
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="drop-text">
+                      <Link to="#" className="drop-text">
                         Zabiegi kosmetyczne
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="drop-text">
+                      <Link to="#" className="drop-text">
                         Blog
-                      </a>
+                      </Link>
                     </li>
-                    {/* <!-- <li><a href="single.html" className="drop-text">Single Page</a></li> --> */}
                     <li>
-                      <a href="gallery.html" className="drop-text">
+                      <Link to="gallery.html" className="drop-text">
                         Galeria
-                      </a>
+                      </Link>
                     </li>
-                    {/* <!-- <li><a href="#testi" className="drop-text">Opinie klientów</a></li> --> */}
                     <li>
-                      <a href="#" className="drop-text">
+                      <Link to="#" className="drop-text">
                         Opinie klientów
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="regulamin.html" className="drop-text">
+                      <Link to="regulamin.html" className="drop-text">
                         Regulamin
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
 
                 {/* <!-- kontakt --> */}
                 <li>
-                  <a className="underline" href="contact.html">
+                  <Link className="underline" to="contact.html">
                     Kontakt
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
